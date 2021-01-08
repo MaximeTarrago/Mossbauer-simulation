@@ -1,0 +1,10 @@
+yes		! Electronic structure informations at the end of the file ('yes') or not (anything else)
+2		! Number of electronic configurations
+2 2 1 1 0	! orbital population (dxy, dxz, dyz, dz2, dx2-y2)
+2 1 2 1 0
+0		! excitation Energies of the excited el. states (in cm-1) with respect to the lowest (corresponding to the first written configuration above)
+450.0		! Value of the spin-orbit coupling constant of the metal center (about 400 cm-1 for Fe(II), for instance)
+XT		! The type of the job. 'X' returns the molar susceptibility (chi), 'XT' returns chi*T and 'mag' returns the molar magnetization, all in cgsemu units. 'mos' calls the Mossbauer module rather than the magnetization module (see input-mos-model for model input)
+1.3		! The applied field
+blahblah.txt	! The text file containing the list of temperatures at which the magnetization must be calculated
+leb		! Grid level. 'leb' (for lebedev grid) yields results of satisfying accuracy. We still left 'normal' and 'fine' grid for numerical integrations, but they are much slower. 

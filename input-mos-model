@@ -1,0 +1,18 @@
+yes		! Electronic structure informations at the end of the file ('yes') or not (anything else)
+2		! Number of electronic configurations
+2 2 1 2 0	! orbital population (dxy, dxz, dyz, dz2, dx2-y2)
+2 1 2 2 0	
+0.0		! excitation Energies of the excited el. states (in cm-1) with respect to the lowest (corresponding to the first written configuration above) 
+400.0		! Value of the spin-orbit coupling constant of the metal center (about 400 cm-1 for Fe(II), for instance)
+mos		! Calls the Mossbauer module rather than the magnetic susceptibility module
+7.0		! norm of the applied field
+0.0 0.0 0.0	! Zero-field parameters, in the order quad. split (mm/s), eta (no units), and isomer shift (mm/s)
+1.2		! Temperature of the simulation
+fast		! electronic relaxation limit. Only fast limit is implemented for now.
+normal		! grid systems: 'leb' (Lebedev quadrature, very fast but not recommended for high-field spectra because of frequent intruder peaks due to the approximate powder-averaging), 'normal' or 'fine'
+0.0006		! Maximum intensity (arbitrary units)
+0.25		! Width of the lorentzians
+5.4		! average radius**-3 of the d-electron (a.u.-3, necessary for calculation of the calculation of the internal fields
+21.625		! Proportionnality factor between the fermi contact field and the spin vector (T, typical value around 21.5 T)
+4.0		! boundary of the simulated spectrum (in mm/s)
+0.05		! Resolution of the calculated spectrum (in mm/s)
